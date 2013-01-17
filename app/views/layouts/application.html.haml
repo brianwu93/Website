@@ -1,0 +1,17 @@
+%html
+  %header
+    .logo
+      BRIAN
+    .nav
+      %ul
+        %li blog
+        %li projects
+        %li photos
+        %li <a href="../pages/contact">contact</a>
+  %title
+    Brian Wu
+  = stylesheet_link_tag "application", :media => "all"
+  = javascript_include_tag "application"
+  = csrf_meta_tags
+%body
+  = yield
