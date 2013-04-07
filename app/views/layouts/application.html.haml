@@ -1,13 +1,17 @@
 %html
   %header
     .logo
-      BRIAN
+      = link_to "BRIAN" , "/"
     .nav
       %ul
-        %li blog
-        %li projects
-        %li photos
-        %li <a href="../pages/contact">contact</a>
+        %li
+          = link_to "blog", blogposts_path
+        %li
+          = link_to "projects", "#"
+        %li
+          = link_to "photos", "#"
+        %li
+          = link_to "contact", contact_path
   %title
     Brian Wu
   = stylesheet_link_tag "application", :media => "all"

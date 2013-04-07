@@ -1,0 +1,17 @@
+%body
+  = stylesheet_link_tag "blogposts", :media => "all"
+  .body-wrap
+    .blogpost
+      .title
+        = @blogpost.title
+      .content
+        = @blogpost.content
+      .delete
+        = link_to "Delete", @blogpost, :method => :delete, :confirm => "Are you sure?"
+      .edit
+        = link_to "Edit", edit_blogpost_path(@blogpost)
+        ||
+      .time
+        = @blogpost.created_at
+        ||
+

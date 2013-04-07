@@ -1,8 +1,13 @@
+/*
+  *= require_self
+  *= require_tree
+
 html
-  background-color: #ffffff
+  background-color: #333333
   margin: 0
   padding: 0
   header
+    height: 50px
     padding: 20px
     min-width: 1000px
     .logo
@@ -10,20 +15,28 @@ html
       font-size: 45px
       font-family: Verdana
       float: left
-      padding-right: 80px
+      padding-right: 100px
+      a:link
+        text-decoration: none
+        color: #f5f5f5
+      a:visited
+        text-decoration: none
+        color: #f5f5f5
+
     .nav
+      float: right
       ul
         li
           a:link
             text-decoration: none
-            color: #787878
+            color: #f5f5f5
           a:visited
             text-decoration: none
-            color: #787878
+            color: #f5f5f5
           a:hover
-            color: #483d8b
+            color: #4169e1
           display: inline
-          padding-right: 50px
+          padding-right: 70px
           font-family: arial, sans-serif
           font-size: 25px
           font-variant: small-caps

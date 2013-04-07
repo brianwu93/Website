@@ -1,0 +1,14 @@
+%body
+  = stylesheet_link_tag "blogposts", :media => "all"
+  .body-wrap
+    .blogpost
+      .add-new
+        = link_to "New Post", new_blogpost_path
+      - @blogposts.each do |post|
+        .title
+          = link_to post.title, post
+        .content
+          = truncate(post.content, :length => 500, :separator => " ")
+        .time
+          = post.created_at
+        <br>

@@ -1,0 +1,10 @@
+%body
+  = stylesheet_link_tag "blogposts", :media => "all"
+  .body-wrap
+    .blogpost
+      .title
+        = @blogpost.title
+      .content
+        = @blogpost.content
+      .time
+        = @blogpost.created_at

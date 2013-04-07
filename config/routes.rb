@@ -1,7 +1,10 @@
 Website::Application.routes.draw do
-  get "pages/home"
 
+  resources :blogposts
+
+  get "pages/home"
   get "pages/contact"
+  match '/contact', :to => 'pages#contact'
 
   root :to => "pages#home"
 
